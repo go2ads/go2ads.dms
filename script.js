@@ -1,0 +1,2 @@
+function toggleMenu(){const m=document.querySelector('.menu');if(m)m.classList.toggle('open')}
+document.querySelectorAll('.carousel-wrap').forEach(w=>{const c=w.querySelector('.carousel'),p=w.querySelector('[data-prev]'),n=w.querySelector('[data-next]');if(p)p.onclick=()=>c.scrollBy({left:-c.clientWidth*.85,behavior:'smooth'});if(n)n.onclick=()=>c.scrollBy({left:c.clientWidth*.85,behavior:'smooth'})});

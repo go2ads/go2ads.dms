@@ -258,4 +258,17 @@
 .client-card p {
   text-align: center !important;
 }
+/* OUR CLIENTS - CENTER ALIGN */
+.client-card {
+  text-align: center !important;
+}
 
+.client-card img {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.client-card h3,
+.client-card p {
+  text-align: center !important;
+}

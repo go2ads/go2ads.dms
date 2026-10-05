@@ -272,3 +272,26 @@
 .client-card p {
   text-align: center !important;
 }
+/* OUR CLIENTS - CENTER EVERYTHING */
+.client-card {
+    text-align: center !important;
+}
+
+.client-card img {
+    display: block !important;
+    margin: 0 auto 10px !important;
+}
+
+.client-card h3 {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.client-card p {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

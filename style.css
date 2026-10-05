@@ -95,3 +95,54 @@
 .carousel {
     justify-content: center;
 }
+/* CAROUSEL FINAL FIX */
+
+.carousel-wrap {
+  width: 100%;
+}
+
+.carousel-controls {
+  position: static !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin-top: 14px !important;
+  width: 100% !important;
+}
+
+.carousel-controls button {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+
+.see-more {
+  text-align: center !important;
+  margin-top: 14px !important;
+}
+
+
+/* MOBILE */
+@media (max-width: 680px) {
+
+  .carousel {
+    display: flex !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    gap: 12px !important;
+  }
+
+  .carousel-card {
+    flex: 0 0 100% !important;
+    min-width: 100% !important;
+  }
+
+  .carousel-controls {
+    position: static !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 12px !important;
+  }
+
+}

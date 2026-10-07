@@ -295,3 +295,402 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+/* =========================================================
+   NEW PRICING PAGE
+   ========================================================= */
+
+/* ---------- TOP PRICING TABLE ---------- */
+
+.pricing-table-wrap{
+  width:100%;
+  overflow:visible;
+}
+
+.pricing-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  table-layout:fixed;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.pricing-table th{
+  background:var(--navy);
+  color:#fff;
+  padding:17px 14px;
+  text-align:center;
+  font-size:14px;
+  font-weight:800;
+}
+
+.pricing-table th:first-child{
+  text-align:left;
+}
+
+.pricing-table td{
+  padding:20px 14px;
+  border-top:1px solid var(--line);
+  text-align:center;
+  vertical-align:middle;
+  color:var(--text);
+}
+
+.pricing-table td:first-child{
+  text-align:left;
+}
+
+.pricing-table td strong{
+  display:block;
+  color:var(--navy);
+  font-size:16px;
+  line-height:1.35;
+}
+
+.pricing-table td small{
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  font-size:12px;
+}
+
+
+/* ---------- PRICE WHATSAPP CTA ---------- */
+
+.price-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:10px;
+  padding:6px 10px;
+  border-radius:7px;
+  background:var(--navy);
+  color:#fff;
+  font-size:10px;
+  font-weight:800;
+  white-space:nowrap;
+  transition:.2s ease;
+}
+
+.price-cta:hover{
+  background:var(--cyan);
+  color:#fff;
+}
+
+
+/* ---------- TRIAL CAMPAIGN ---------- */
+
+.trial-box{
+  margin-top:20px;
+  padding:22px 24px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.trial-box h3{
+  margin:0 0 5px;
+  color:var(--navy);
+  font-size:18px;
+}
+
+.trial-box p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+
+/* =========================================================
+   PLANS INCLUDE
+   Desktop = 2 columns
+   Mobile = horizontal carousel
+   ========================================================= */
+
+.plans-include-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+  align-items:start;
+}
+
+.include-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.include-card-head{
+  padding:22px 22px 16px;
+  text-align:center;
+  border-bottom:1px solid var(--line);
+}
+
+.include-card-head h3{
+  margin:0;
+  color:var(--navy);
+  font-size:21px;
+}
+
+.include-card-head p{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.include-table-wrap{
+  width:100%;
+  overflow:visible;
+}
+
+.include-table{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+}
+
+.include-table th{
+  background:#f3f9fc;
+  color:var(--navy);
+  padding:11px 9px;
+  font-size:12px;
+  text-align:center;
+  border-bottom:1px solid var(--line);
+}
+
+.include-table th:first-child{
+  text-align:left;
+}
+
+.include-table td{
+  padding:10px 9px;
+  font-size:12px;
+  border-bottom:1px solid #edf1f5;
+  color:#465a72;
+  text-align:center;
+}
+
+.include-table td:first-child{
+  text-align:left;
+  color:var(--text);
+  font-weight:600;
+}
+
+.include-table td:nth-child(2),
+.include-table td:nth-child(3){
+  font-weight:800;
+  color:var(--navy);
+}
+
+.include-table tr:last-child td{
+  border-bottom:0;
+}
+
+
+/* =========================================================
+   PRICING NOTES
+   ========================================================= */
+
+.pricing-notes{
+  border-top:1px solid var(--line);
+  padding-top:24px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.pricing-notes p{
+  margin:8px 0;
+}
+
+.pricing-final-cta{
+  text-align:center;
+  margin-top:28px;
+}
+
+
+/* =========================================================
+   MOBILE PRICING
+   ========================================================= */
+
+@media(max-width:680px){
+
+  /* ---------- TOP PRICING TABLE ----------
+     Full table visible.
+     No horizontal carousel.
+  */
+
+  .pricing-table-wrap{
+    width:100%;
+    overflow:visible;
+  }
+
+  .pricing-table{
+    width:100%;
+    table-layout:fixed;
+  }
+
+  .pricing-table th{
+    padding:11px 4px;
+    font-size:10px;
+  }
+
+  .pricing-table td{
+    padding:13px 4px;
+  }
+
+  .pricing-table td strong{
+    font-size:10px;
+    line-height:1.3;
+    word-break:normal;
+  }
+
+  .pricing-table td small{
+    font-size:8px;
+    line-height:1.25;
+  }
+
+  .price-cta{
+    margin-top:7px;
+    padding:5px 6px;
+    font-size:8px;
+    border-radius:6px;
+  }
+
+
+  /* ---------- TRIAL BOX ---------- */
+
+  .trial-box{
+    padding:18px 15px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:13px;
+  }
+
+  .trial-box h3{
+    font-size:16px;
+  }
+
+  .trial-box p{
+    font-size:12px;
+    line-height:1.45;
+  }
+
+  .trial-box .btn{
+    width:100%;
+  }
+
+
+  /* ---------- PLANS INCLUDE CAROUSEL ---------- */
+
+  .plans-include-grid{
+    display:flex;
+    width:100%;
+    overflow-x:auto;
+    gap:14px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    padding:3px 2px 12px;
+  }
+
+  .plans-include-grid::-webkit-scrollbar{
+    display:none;
+  }
+
+  .include-card{
+    flex:0 0 88%;
+    min-width:88%;
+    scroll-snap-align:start;
+  }
+
+  .include-card-head{
+    padding:17px 14px 13px;
+  }
+
+  .include-card-head h3{
+    font-size:18px;
+  }
+
+  .include-card-head p{
+    font-size:10px;
+  }
+
+  .include-table{
+    table-layout:fixed;
+  }
+
+  .include-table th{
+    padding:9px 5px;
+    font-size:10px;
+  }
+
+  .include-table td{
+    padding:8px 5px;
+    font-size:10px;
+    line-height:1.3;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media(max-width:430px){
+
+  /* Pricing table remains FULLY visible */
+
+  .pricing-table th{
+    padding:9px 3px;
+    font-size:9px;
+  }
+
+  .pricing-table td{
+    padding:11px 3px;
+  }
+
+  .pricing-table td strong{
+    font-size:9px;
+  }
+
+  .pricing-table td small{
+    font-size:7px;
+  }
+
+  .price-cta{
+    padding:4px 5px;
+    font-size:7px;
+    margin-top:6px;
+  }
+
+
+  /* Plans Include carousel */
+
+  .include-card{
+    flex:0 0 92%;
+    min-width:92%;
+  }
+
+  .include-card-head h3{
+    font-size:17px;
+  }
+
+  .include-table th{
+    font-size:9px;
+    padding:8px 4px;
+  }
+
+  .include-table td{
+    font-size:9px;
+    padding:7px 4px;
+  }
+
+}

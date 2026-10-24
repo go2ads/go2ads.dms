@@ -777,3 +777,50 @@ a.floating-whatsapp img {
     max-width: 54px !important;
   }
 }
+
+/* Phone button in header */
+.phone-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #00BDE8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.phone-btn:hover {
+  color: #ffffff;
+}
+
+.phone-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Mobile header layout */
+@media (max-width: 850px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .phone-btn {
+    margin-left: auto;
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .phone-icon {
+    font-size: 18px;
+  }
+
+  .mobile-toggle {
+    flex-shrink: 0;
+  }
+}
+

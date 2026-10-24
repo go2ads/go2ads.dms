@@ -778,21 +778,23 @@ a.floating-whatsapp img {
   }
 }
 
-/* Phone button in header */
+
+/* Header phone button */
 .phone-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
-  color: #00BDE8;
+  color: var(--navy);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 14px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .phone-btn:hover {
-  color: #ffffff;
+  color: var(--cyan);
 }
 
 .phone-icon {
@@ -800,18 +802,23 @@ a.floating-whatsapp img {
   line-height: 1;
 }
 
-/* Mobile header layout */
+/* Desktop: phone occupies the WhatsApp button position */
+@media (min-width: 851px) {
+  .phone-btn {
+    margin-left: 24px;
+  }
+}
+
+/* Mobile: brand | phone | hamburger */
 @media (max-width: 850px) {
   .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 8px;
   }
 
   .phone-btn {
+    order: 2;
     margin-left: auto;
-    font-size: 13px;
+    font-size: 12px;
     gap: 4px;
   }
 
@@ -820,7 +827,11 @@ a.floating-whatsapp img {
   }
 
   .mobile-toggle {
+    order: 3;
     flex-shrink: 0;
   }
-}
 
+  .brand {
+    order: 1;
+  }
+}

@@ -810,28 +810,38 @@ a.floating-whatsapp img {
 }
 
 /* Mobile: brand | phone | hamburger */
+
 @media (max-width: 850px) {
   .nav {
     gap: 8px;
+    justify-content: space-between;
+  }
+
+  .brand {
+    order: 1;
+    flex-shrink: 0;
   }
 
   .phone-btn {
     order: 2;
     margin-left: auto;
-    font-size: 12px;
+    padding: 9px 10px;
     gap: 4px;
+    font-size: 12px;
   }
 
   .phone-icon {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .mobile-toggle {
     order: 3;
+    display: block;
     flex-shrink: 0;
+    padding: 0;
   }
 
-  .brand {
-    order: 1;
+  .menu {
+    top: 70px;
   }
 }

@@ -845,3 +845,51 @@ a.floating-whatsapp img {
     top: 70px;
   }
 }
+/* DESKTOP HEADER ONLY - MOBILE UNCHANGED */
+@media (min-width: 851px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 24px;
+  }
+
+  .phone-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-left: 0;
+    padding: 10px 14px;
+    background: #012352;
+    color: #ffffff !important;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .phone-btn .phone-icon {
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .phone-btn .phone-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: #ffffff;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+}

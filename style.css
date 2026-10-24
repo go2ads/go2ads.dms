@@ -893,3 +893,35 @@ a.floating-whatsapp img {
     display: none;
   }
 }
+/* FORCE PHONE CAPSULE ON DESKTOP ONLY */
+@media screen and (min-width: 851px) {
+  .header .nav > .phone-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    background-color: #012352 !important;
+    color: #ffffff !important;
+    padding: 10px 14px !important;
+    border-radius: 999px !important;
+    margin-left: 18px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+  }
+
+  .header .nav > .phone-btn .phone-icon,
+  .header .nav > .phone-btn .phone-icon svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+  }
+
+  .header .nav > .phone-btn .phone-icon svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .header .nav > .menu {
+    margin-left: auto !important;
+  }
+}

@@ -694,3 +694,43 @@
   }
 
 }
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  width: 58px;
+  height: 58px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease;
+}
+
+.floating-whatsapp img {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+  .floating-whatsapp {
+    width: 54px;
+    height: 54px;
+    right: 16px;
+    bottom: 20px;
+  }
+
+  .floating-whatsapp img {
+    width: 33px;
+    height: 33px;
+  }
+}

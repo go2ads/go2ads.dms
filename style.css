@@ -8,7 +8,23 @@
 
 /* Responsive: keep the desktop structure, but size it comfortably for phones. */
 @media(max-width:850px){
-  .menu{display:none;position:absolute;left:4%;right:4%;top:70px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px;flex-direction:column;align-items:stretch;box-shadow:0 12px 30px #01235214}
+ .menu {
+  display: none;
+  position: absolute;
+  left: auto;
+  right: 4%;
+  top: 70px;
+  width: max-content;
+  min-width: 125px;
+  max-width: 90vw;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 14px;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 12px 30px #01235214;
+}
   .menu.open{display:flex}.mobile-toggle{display:block}
   .hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:28px}
   .contact-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
@@ -923,5 +939,10 @@ a.floating-whatsapp img {
 
   .header .nav > .menu {
     margin-left: auto !important;
+  }
+}
+@media (max-width: 850px) {
+  .menu a {
+    white-space: nowrap;
   }
 }

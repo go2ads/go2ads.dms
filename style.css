@@ -946,3 +946,22 @@ a.floating-whatsapp img {
     white-space: nowrap;
   }
 }
+/* Sticky Footer Fix */
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > main {
+  flex: 1;
+}
+
+body > footer {
+  margin-top: auto;
+}
